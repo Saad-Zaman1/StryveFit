@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "270283796551",
+    "project_id": "stryve-fit",
+    "storage_bucket": "stryve-fit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270283796551:android:ab35e2d925e349e7fa8162",
+        "android_client_info": {
+          "package_name": "com.example.mainactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270283796551-qf3127teq494p1nbp1a35sa8hf66704k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGwN6MksLdSyX8klmpEGnhBVKiItKZQNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270283796551-qf3127teq494p1nbp1a35sa8hf66704k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

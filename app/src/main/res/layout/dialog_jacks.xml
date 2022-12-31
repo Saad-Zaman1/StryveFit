@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/gifMclimbers"
+        android:src="@drawable/jumpingjacks"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pushups_tv"
+        android:layout_below="@+id/gifMclimbers"
+        android:fontFamily="@font/maven_pro"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:text="@string/jJacks"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/pushups_des"
+        android:layout_below="@+id/pushups_tv"
+        android:fontFamily="@font/maven_pro"
+        android:padding="5dp"
+        android:text="@string/Jacks_des"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:layout_below="@+id/pushups_des"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:text="@string/close"/>
+
+</RelativeLayout>

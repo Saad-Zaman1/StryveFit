@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/goalpickertv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/roboto"
+        android:text="Goal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <NumberPicker
+        android:id="@+id/numberpicker"
+        android:layout_width="90dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/goalpickertv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:descendantFocusability="blocksDescendants" />
+
+    <android.widget.Button
+        android:id="@+id/selectgoalbtn"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/numberpicker"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonbackground"
+        android:fontFamily="@font/raleway"
+        android:text="Select"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"></android.widget.Button>
+
+
+</RelativeLayout>

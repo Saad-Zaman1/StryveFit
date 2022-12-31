@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".bmiUweightActivity">
+
+
+        <!--    Breakfast layout-->
+        <RelativeLayout
+            android:id="@+id/breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tvbreakfastHeading"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:padding="10dp"
+                android:text="Breakfast"
+                android:textColor="#448AFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvbreakfastHeading"
+                android:fontFamily="@font/maven_pro"
+                android:padding="10dp"
+                android:text="367Cal"
+                android:textColor="#448AFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Btime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvbreakfastHeading"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:hint="7:30 to 10:00 Am"
+                android:textColorHint="#315780"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Tcal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Btime"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:hint="Total Calories: 424cal"
+                android:textColorHint="#315780"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Tcal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_pro"
+                android:hint="2 egg brown bread sandwich +
+            green chutney + 1 cup milk + 3 cashews +
+             4 almonds + 2 walnuts"
+                android:textColorHint="#315780"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/breakfast"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+
+        <!--    Lunch layout-->
+
+        <RelativeLayout
+            android:id="@+id/lunch"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/breakfast"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tvlunchfastHeading"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:padding="10dp"
+                android:text="Lunch"
+                android:textColor="#448AFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvlunchfastHeading"
+                android:fontFamily="@font/maven_pro"
+                android:padding="10dp"
+                android:text="367Cal"
+                android:textColor="#448AFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Ltime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvlunchfastHeading"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:hint="12:30 to 02:00 Pm"
+                android:textColorHint="#315780"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/TLcal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Ltime"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:hint="Total Calories: 424cal"
+                android:textColorHint="#315780"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TLcal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/maven_pro"
+                android:hint="2 egg brown bread sandwich +
+            green chutney + 1 cup milk + 3 cashews +
+             4 almonds + 2 walnuts"
+                android:textColorHint="#315780"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/lunch"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/black" />
+
+        <!--    Snack Layout-->
+
+        <RelativeLayout
+            android:id="@+id/snack"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/lunch"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cardbackgroung">
+
+            <TextView
+                android:id="@+id/tvsnackHeading"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="Snack"
+                android:textColor="#FF4C4C"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvsnackHeading"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="367Cal"
+                android:textColor="#FF4C4C"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Stime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvsnackHeading"
+                android:layout_marginLeft="10dp"
+                android:hint="12:30 to 02:00 Pm"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/TScal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Stime"
+                android:layout_marginLeft="10dp"
+                android:hint="Total Calories: 424cal"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TScal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="2 egg brown bread sandwich +
+            green chutney + 1 cup milk + 3 cashews +
+             4 almonds + 2 walnuts"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <!--    Dinner Layout-->
+
+
+        <RelativeLayout
+            android:id="@+id/dinner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/snack"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cardbackgroung">
+
+            <TextView
+                android:id="@+id/tvdinnerHeading"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="Dinner"
+                android:textColor="#FF4C4C"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvdinnerHeading"
+                android:fontFamily="@font/roboto"
+                android:padding="10dp"
+                android:text="367Cal"
+                android:textColor="#FF4C4C"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Dtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvdinnerHeading"
+                android:layout_marginLeft="10dp"
+                android:hint="12:30 to 02:00 Pm"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/TDcal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Dtime"
+                android:layout_marginLeft="10dp"
+                android:hint="Total Calories: 424cal"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TDcal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="2 egg brown bread sandwich +
+            green chutney + 1 cup milk + 3 cashews +
+             4 almonds + 2 walnuts"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <android.widget.Button
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/buttonbackground"
+            android:fontFamily="@font/raleway"
+            android:text="Tips"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></android.widget.Button>
+
+    </RelativeLayout>
+</ScrollView>

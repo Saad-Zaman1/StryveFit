@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">StryveFit</string>
+    <string name="login">Login</string>
+    <string name="unit">Cm</string>
+    <string name="femaletext">Female</string>
+    <string name="age">Age</string>
+    <string name="startingheight">170</string>
+    <string name="startingweight">55</string>
+    <string name="startingage">22</string>
+    <string name="todo">TODO</string>
+    <string name="height">Height</string>
+    <string name="calculate_your_bmi">Calculate Your BMI</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <string name="pushups">Pushups</string>
+    <string name="x4">x3</string>
+    <string name="mountain_climbers">Mountain Climbers</string>
+    <string name="pushups_des">Lay prone on the ground with arms supporting your body. \n\nKeep your body straight while raising and lowering your body with your arms. \n\nThis exercise works the chest, shoulders, tricep,backandlegs.</string>
+    <string name="close">Close</string>
+    <string name="x2">x2</string>
+    <string name="Mclimber_des">Start with your body in a straight line and your hands slightly wider than shoulder-width apart. \n\nBring one knee up toward the center of your stomach and then quickly alternate between legs. \n\nThis exercise works the Abs, glutes, hips, legs.</string>
+    <string name="jJacks">Jumping Jacks</string>
+    <string name = "Jacks_des">Stand straight with your feet together and hands by your sides.\n\nJump up, spread your feet and bring both hands together above your head.\n\nJump again and return to the starting position.\n\nThis exercise works the Glutes, quads, hip flexors.</string>
+    <string name="full_body_workout">Full Body Workout</string>
+    <string name="squats">Squats</string>
+    <string name="Squats_des">Stand straight with your feet hip distance apart. Your hips, knees, and toes should all be facing forward.\n\nBend your knees and extend your buttocks backward as if you are going to sit back into a chair. Make sure that you keep your knees behind your toes and your weight in your heels.\n\nThis exercise works the quads, hamstrings, glutes and core..</string>
+    <string name="back">Back</string>
+    <string name="crunches">Crunches</string>
+    <string name="Crunches_des">Start lying on your back with your knees bent and pointed to the ceiling. Bring both hands behind your head without putting undue pressure on your neck.\n\nExhale as you lift your entire torso off the ground and toward your knees. Raise from lying down to sitting up in one fluid motion.\n\nThis exercise works the hamstrings and core..</string>
+    <string name="reverse_crunches">Reverse Crunches</string>
+    <string name = "rcrunches_des">Lie on your back with your hands by your sides. Lift your knees until your thighs and calves form a 90-degree angle and your calves are parallel to the floor.\n\nLift your hips and bring your knees, as far as you can, toward the chest.\n\nHold and then slowly return to the starting position.\n\nThis exercise works the core</string>
+    <string name="change_goal">Change Goal</string>
+    <string name="food">Food</string>
+    <string name="calories">Calories</string>
+
+</resources>

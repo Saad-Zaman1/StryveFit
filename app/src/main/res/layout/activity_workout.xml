@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".WorkoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/bvector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:contentDescription="@string/back"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/mainTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bvector"
+            android:fontFamily="@font/maven_pro"
+            android:gravity="center"
+            android:text="@string/full_body_workout"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mainTv"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <!--Jumping Jacks Card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_jJacks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainTv"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_jJacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_jJacks"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/jumpingjacks" />
+
+                <TextView
+                    android:id="@+id/jJacks_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/img_jJacks"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/jJacks"
+                    android:textColor="#448AFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jJacks_tv"
+                    android:layout_marginStart="36sp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_jJacks"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/x2"
+                    android:textColorHint="#315780"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Pushups Card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_pushups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_jJacks"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_pushups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_pushups"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/pushups" />
+
+                <TextView
+                    android:id="@+id/pushups_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/img_pushups"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/pushups"
+                    android:textColor="#448AFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pushups_tv"
+                    android:layout_marginStart="36sp"
+                    android:layout_toEndOf="@+id/img_pushups"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/x4"
+                    android:textColorHint="#315780"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Squads Card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_squats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_pushups"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_squats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_squats"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/squads"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/squats_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/img_squats"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/squats"
+                    android:textColor="#448AFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/squats_tv"
+                    android:layout_marginStart="36sp"
+                    android:layout_toEndOf="@+id/img_squats"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/x4"
+                    android:textColorHint="#315780"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Crunches Card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_crunches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_squats"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_crunches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_crunches"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/crunches"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/crunches_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/img_crunches"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/crunches"
+                    android:textColor="#448AFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crunches_tv"
+                    android:layout_marginStart="36sp"
+                    android:layout_toEndOf="@+id/img_crunches"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/x2"
+                    android:textColorHint="#315780"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Reverse Crunches Card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_rcrunches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_crunches"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_rcrunches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_rcrunches"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/rcrunches"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/rcrunches_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/img_rcrunches"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/reverse_crunches"
+                    android:textColor="#448AFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rcrunches_tv"
+                    android:layout_marginStart="36sp"
+                    android:layout_toEndOf="@+id/img_rcrunches"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/x2"
+                    android:textColorHint="#315780"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Mountain Climber Card-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_Mclimers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_rcrunches"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="11dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/layout_Mclimbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_Mclimbers"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/mountainclimbers"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/Mclimbers_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/img_Mclimbers"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/mountain_climbers"
+                    android:textColor="#448AFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Mclimbers_tv"
+                    android:layout_marginStart="36sp"
+                    android:layout_toEndOf="@+id/img_Mclimbers"
+                    android:fontFamily="@font/roboto"
+                    android:hint="@string/x2"
+                    android:textColorHint="#315780"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

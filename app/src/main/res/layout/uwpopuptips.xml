@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/male">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="\n1. Heavy food items that are more in calories.\n\n2. Frequent consumption of food items which are rich in nutrients, it could be snacks, shakes or juices, or proper meals.\n\n3.Consume protein supplements along with adequate amount of vegetables and fruits.\n\n4. Eating calorie dense food and maintaining a balanced diet will help in gaining the weight."
+            android:textSize="25dp"
+            android:fontFamily="@font/maven_pro"
+            android:textColor="#315780"
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:id="@+id/tipstv"
+            />
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/cancel"
+            android:layout_below="@+id/tipstv"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonbackground"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+

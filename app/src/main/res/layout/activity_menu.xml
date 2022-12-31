@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+<ImageView
+    android:id="@+id/logoutbtn"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_baseline_logout_24"
+    android:layout_marginEnd="18dp"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="end"
+
+    />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="StryveFit"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/maven_pro"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="97dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:srcCompat="@mipmap/menulogo" />
+
+    <Button
+        android:id="@+id/btnBmi"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="28dp"
+        android:background="@drawable/menubtn"
+        android:textColorHint="@color/white"
+        android:hint="BMI"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <Button
+        android:id="@+id/btnStepCounter"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/maven_pro"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="28dp"
+
+        android:background="@drawable/menubtn"
+        android:textColorHint="@color/white"
+        android:hint="StepCounter"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <Button
+        android:id="@+id/btnDietPlan"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/maven_pro"
+        android:layout_marginTop="20dp"
+        android:textSize="28dp"
+        android:background="@drawable/menubtn"
+        android:gravity="center"
+        android:padding="10dp"
+        android:hint="Cal Counter"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <Button
+        android:id="@+id/btnHomeworkout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/maven_pro"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="28dp"
+        android:background="@drawable/menubtn"
+        android:hint="Home Workout"
+        android:textColorHint="@color/white"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+
+</LinearLayout>

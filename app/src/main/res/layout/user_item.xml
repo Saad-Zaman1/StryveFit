@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#448AFF"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:radius="10dp">
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/maven_pro"
+            android:maxWidth="70dp"
+            android:minWidth="90dp"
+            android:text="@string/food"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/food"
+            android:fontFamily="@font/maven_pro"
+            android:maxWidth="80dp"
+            android:minWidth="80dp"
+            android:text="Cal"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+
+            />
+        <TextView
+            android:id="@+id/iid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@+id/calories"
+            android:fontFamily="@font/maven_pro"
+            android:maxWidth="80dp"
+            android:minWidth="80dp"
+            android:text="ID"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:visibility="invisible"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".calcounterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/goalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/maven_pro"
+            android:text="2000"
+            android:textColor="#448AFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/kcalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@+id/goalTv"
+            android:fontFamily="@font/maven_pro"
+            android:text="Kcal"
+            android:textColor="#448AFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/mealCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/kcalTv"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_baseline_fastfood_24"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goalTv"
+            android:layout_centerHorizontal="true"
+            android:max="2000"
+            android:minWidth="350dp"
+            android:minHeight="50dp"
+            android:progressTint="#448AFF"
+            android:scaleY="5" />
+
+        <EditText
+            android:id="@+id/ChangeGET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/maven_pro"
+            android:text="1000"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/SelectGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_toEndOf="@+id/ChangeGET"
+            android:src="@drawable/ic_baseline_check_24" />
+
+        <Button
+            android:id="@+id/ChangeG_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChangeGET"
+            android:layout_marginStart="70dp"
+            android:fontFamily="@font/maven_pro"
+            android:text="@string/change_goal" />
+        <Button
+            android:id="@+id/showdatabtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChangeGET"
+            android:layout_toEndOf="@+id/ChangeG_btn"
+            android:fontFamily="@font/maven_pro"
+            android:text="Show"
+            android:layout_marginStart="30dp"/>
+
+        <EditText
+            android:id="@+id/Food_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChangeG_btn"
+            android:layout_marginStart="60dp"
+            android:hint="Food"
+
+            android:maxWidth="100dp"
+            android:minWidth="90dp"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/CalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChangeG_btn"
+            android:layout_marginStart="40dp"
+            android:layout_toRightOf="@+id/Food_et"
+            android:hint="Cal"
+            android:inputType="number"
+            android:maxWidth="90dp"
+            android:minWidth="90dp"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/SelectMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChangeG_btn"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/CalTv"
+            android:onClick="onClick"
+            android:src="@drawable/ic_baseline_check_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CalTv"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/userRecycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/tv_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="data"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
