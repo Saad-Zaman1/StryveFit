@@ -29,7 +29,15 @@ The Fitness App leverages various technologies and libraries to provide a seamle
 - **SharedPreferences**: SharedPreferences is employed to store user-specific data, preferences, and settings locally on the device.
 
  <p align="center">
-  <img src="https://github.com/Saad-Zaman1/ImageGallary/assets/88928048/0760e6b9-1fd2-4f3f-8559-980be9c1e670" alt="All Images" width="300" />
-    <img src="https://github.com/Saad-Zaman1/ImageGallary/assets/88928048/6aff0c10-7d23-4eb7-aa5e-0d920c648758" alt="All Images" width="300" />
+    <img src="https://github.com/Saad-Zaman1/StryveFit/assets/88928048/3a793ace-1f51-4d0f-9003-09d552756bb3" alt="All Images" width="300" />
+  <img src="https://github.com/Saad-Zaman1/StryveFit/assets/88928048/044927be-7f43-47bf-a633-11f2b57d4b1a" alt="All Images" width="300" />
+  <img src="https://github.com/Saad-Zaman1/StryveFit/assets/88928048/9fdeea9c-8ea5-40de-b245-95f4d384e04a" alt="All Images" width="300" />
 </p>
+ <p align="center">
+    <img src="https://github.com/Saad-Zaman1/StryveFit/assets/88928048/0bd81d7c-cd18-4d6e-a8d9-5c2e070d66cf" alt="All Images" width="300" />
+  <img src="https://github.com/Saad-Zaman1/StryveFit/assets/88928048/e2865931-9e67-43e7-b782-119304481e43" alt="All Images" width="300" />
+  <img src="https://github.com/Saad-Zaman1/StryveFit/assets/88928048/eca5eca8-4688-4bec-97fc-0d880ae0e320" alt="All Images" width="300" />
+</p>
+
+
 
